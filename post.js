@@ -9,15 +9,17 @@ function loadData() {
 function displayPost(post) {
     const postContainer = document.getElementById('post_container');
     for (const posts of post) {
-        const div = document.createElement('div');
-        div.innerHTML =
+        const postDiv = document.createElement('div');
+        postDiv.classList.add('post-style');
+
+        postDiv.innerHTML =
             `
         <h1>${posts.name}</h1>
         <h5>${posts.email}</h5>
         <p>${posts.body}</p>
         
         `
-        postContainer.appendChild(div);
+        postContainer.appendChild(postDiv);
     }
 
 
