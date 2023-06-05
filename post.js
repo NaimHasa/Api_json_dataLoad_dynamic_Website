@@ -14,9 +14,9 @@ function displayPost(post) {
 
         postDiv.innerHTML =
             `
-        <h1>${posts.name}</h1>
-        <h5>${posts.email}</h5>
-        <p>${posts.body}</p>
+        <h1>Name: ${posts.name}</h1>
+        <h5>Email: ${posts.email}</h5>
+        <p>Description: ${posts.body}</p>
         
         `
         postContainer.appendChild(postDiv);
